@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+.gallery-section {
+    background-color: $color-white; // Volvemos al blanco para que contraste con el menú crema
+    
+    .carousel {
+        max-width: 900px; // No lo hacemos gigante para que sea más elegante
+        margin: 0 auto;
+        
+        .carousel-item {
+            height: 500px; // Altura fija para que no salte el contenido
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // Fundamental para que no se deformen
+                filter: brightness(0.8); // Oscurece un poco la imagen para que se lea el texto
+            }
+        }
+
+        .carousel-caption {
+            background: rgba($color-text-dark, 0.4); // Fondo sutil para el texto
+            backdrop-filter: blur(5px); // Efecto vidrio esmerilado (Glassmorphism)
+            border-radius: 15px;
+            padding: 20px;
+            bottom: 30px;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: $color-primary;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+    }
+}

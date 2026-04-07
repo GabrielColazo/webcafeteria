@@ -1,0 +1,43 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+.demo-top-bar {
+    // Usamos un color crema muy suave (similar al del menú)
+    background-color: #f8f1e9; 
+    color: $color-text-dark;
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3000; // Super alto para que nada lo tape
+    border-bottom: 1px solid rgba($color-primary, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    p {
+        margin: 0;
+        letter-spacing: 0.5px;
+    }
+
+    a {
+        color: $color-primary;
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 1px solid rgba($color-primary, 0.3);
+        
+        &:hover {
+            color: color.adjust($color-primary, $lightness: -10%);
+            border-bottom-color: $color-primary;
+        }
+    }
+
+    // Efecto de desaparición suave
+    &.hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+    }
+}

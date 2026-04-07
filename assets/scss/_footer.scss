@@ -1,0 +1,122 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+.main-footer {
+    background-color: #1a1412; 
+    color: #d6ccc2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 100px 0 30px; 
+
+    // --- LOGO Y TÍTULOS ---
+    .footer-logo {
+        font-weight: 800;
+        letter-spacing: -1px;
+        color: $color-white;
+        span {
+            color: $color-primary; 
+        }
+    }
+
+    h5 {
+        color: $color-white;
+        font-size: 0.9rem;
+    }
+
+    // --- INPUTS Y FORMULARIOS ---
+    .form-control {
+        background-color: rgba($color-white, 0.05) !important;
+        border-color: rgba($color-white, 0.1) !important;
+        color: $color-white !important;
+        box-shadow: none !important;
+
+        &::placeholder {
+            color: rgba($color-white, 0.3);
+        }
+        
+        &:focus {
+            border-color: $color-primary !important;
+            background-color: rgba($color-white, 0.08) !important;
+        }
+    }
+
+    // --- BOTÓN NEWSLETTER ---
+    .btn-newsletter {
+        background-color: $color-primary; 
+        color: $color-white;
+        border: none;
+        font-weight: 700;
+        padding: 0 20px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+
+        &:hover {
+            // CORRECCIÓN 1: Usando color.adjust para evitar el warning
+            background-color: color.adjust($color-primary, $lightness: 10%); 
+            color: $color-white;
+            box-shadow: 0 0 15px rgba($color-primary, 0.4);
+            transform: scale(1.05);
+        }
+    }
+
+    // --- INFO Y REDES ---
+    .contact-info {
+        i {
+            font-size: 1.1rem;
+            color: $color-primary;
+        }
+    }
+
+    .social-links {
+        .btn {
+            width: 38px;
+            height: 38px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border-color: rgba($color-white, 0.2);
+            color: $color-white;
+
+            &:hover {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    hr {
+        border-top: 1px solid rgba($color-white, 0.1);
+        margin: 40px 0 20px;
+    }
+
+    // --- SECCIÓN DE CRÉDITOS ---
+    .footer-credits {
+        p {
+            color: rgba($color-white, 0.9);
+            font-size: 0.85rem;
+            margin-bottom: 0;
+        }
+
+        .demo-text {
+            font-style: italic;
+            color: rgba($color-white, 0.6);
+            margin-top: 5px;
+
+            a {
+                color: $color-primary; 
+                text-decoration: none;
+                font-weight: 700;
+                font-style: normal;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    // CORRECCIÓN 2: Usando color.adjust aquí también
+                    color: color.adjust($color-primary, $lightness: 15%);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma - Tu refugio perfecto</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Banner de Simulación -->
+<div id="demo-banner" class="demo-top-bar">
+    <p>
+        Este sitio es una simulación creada con fines de demostración para el portfolio de 
+        <a href="https://gaboweb.com.ar" target="_blank">Gabo Web</a> 
+        — No representa una cafetería real
+    </p>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <i class="bi bi-cup-hot"></i>
+                Café Aroma
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center" id="inicio">
+        <div class="hero-overlay"></div>
+
+        <div class="container position-relative z-index-2">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center text-white">
+
+                    <!-- Ícono con margen responsivo -->
+                    <i class="bi bi-cup-hot hero-icon mb-3 mb-md-4"></i>
+
+                    <!-- Título: display-3 en mobile, display-1 en desktop -->
+                    <h1 class="hero-title display-3 display-md-1 fw-bold text-uppercase mb-3">
+                        Café Aroma
+                    </h1>
+
+                    <!-- Subtítulo: fs-5 en mobile, fs-3 en desktop -->
+                    <p class="hero-subtitle fs-5 fs-md-3 fw-light mb-4 mb-md-5 mx-auto">
+                        Tu refugio perfecto para disfrutar del mejor café artesanal
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-custom btn-lg px-5 py-3">Ver Menú</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="about-section py-5" id="nosotros">
+        <div class="container py-md-5">
+            <div class="row align-items-center g-4 g-lg-5">
+
+                <!-- Columna Imagen -->
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="about-image-container mb-4 mb-lg-0">
+                        <img src="assets/img/cafe2.webp" alt="Preparando café artesanal"
+                            class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Columna Texto -->
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <div class="about-content ps-lg-4">
+                        <h6 class="text-uppercase fw-bold ls-2 color-secondary mb-2">Nuestra Historia</h6>
+                        <h2 class="display-5 fw-bold mb-4 color-text-dark">Donde cada grano cuenta una historia</h2>
+
+                        <p class="lead mb-4 text-muted">
+                            En <span class="fw-bold color-primary">Café Aroma</span>, no solo servimos café; honramos la
+                            tradición de los maestros tostadores que dedican su vida a encontrar la curva perfecta de
+                            sabor.
+                        </p>
+
+                        <p class="lead mb-4 text-muted">
+                            Desde nuestra fundación, nos hemos comprometido a trabajar directamente con productores
+                            locales, asegurando un comercio justo y la frescura inigualable que solo un tostado diario
+                            puede ofrecer.
+                        </p>
+
+                        <div class="row g-3 justify-content-center justify-content-lg-start">
+                            <div class="col-auto">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-patch-check-fill fs-4 color-primary"></i>
+                                    <span class="fw-semibold">Granos Orgánicos</span>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-truck fs-4 color-primary"></i>
+                                    <span class="fw-semibold">Tostado Local</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section py-5" id="menu">
+        <div class="container py-md-5">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold ls-2 color-secondary mb-2">Carta de Especialidad</h6>
+                <h2 class="display-5 fw-bold color-text-dark">Nuestro Menú</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Item 1: Espresso -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="assets/img/doble expreso.webp" alt="Espresso" class="img-fluid">
+                            <span class="menu-price">$9.999</span>
+                        </div>
+                        <div class="menu-info p-4">
+                            <h4 class="fw-bold mb-2">Espresso Doble</h4>
+                            <p class="text-muted small mb-3">Extracción intensa de 60ml con granos de altura.</p>
+                            <button class="btn btn-menu w-100">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Capuchino -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="assets/img/capuchino.webp" alt="Capuchino" class="img-fluid">
+                            <span class="menu-price">$14.999</span>
+                        </div>
+                        <div class="menu-info p-4">
+                            <h4 class="fw-bold mb-2">Capuchino</h4>
+                            <p class="text-muted small mb-3">Equilibrio perfecto de café, leche y espuma cremosa.</p>
+                            <button class="btn btn-menu w-100">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Croissant -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="assets/img/Croissant and coffee.webp" alt="Croissant" class="img-fluid">
+                            <span class="menu-price">$3.999</span>
+                        </div>
+                        <div class="menu-info p-4">
+                            <h4 class="fw-bold mb-2">Croissant Artesanal</h4>
+                            <p class="text-muted small mb-3">Laminado francés horneado cada mañana.</p>
+                            <button class="btn btn-menu w-100">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Mocaccino (NUEVO) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="assets/img/mocaccino.webp" alt="Mocaccino" class="img-fluid">
+                            <span class="menu-price">$18.999</span>
+                        </div>
+                        <div class="menu-info p-4">
+                            <h4 class="fw-bold mb-2">Mocaccino</h4>
+                            <p class="text-muted small mb-3">Espresso con chocolate suizo y leche espumada.</p>
+                            <button class="btn btn-menu w-100">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Tostado (NUEVO) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="assets/img/tostado de campo.webp" alt="Tostado" class="img-fluid">
+                            <span class="menu-price">$13.999</span>
+                        </div>
+                        <div class="menu-info p-4">
+                            <h4 class="fw-bold mb-2">Tostado de Campo</h4>
+                            <p class="text-muted small mb-3">Pan de masa madre, jamón cocido natural y queso tybo.</p>
+                            <button class="btn btn-menu w-100">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Affogato (NUEVO) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="assets/img/Affogato.webp" alt="Affogato" class="img-fluid">
+                            <span class="menu-price">$2.900</span>
+                        </div>
+                        <div class="menu-info p-4">
+                            <h4 class="fw-bold mb-2">Affogato</h4>
+                            <p class="text-muted small mb-3">Una bocha de helado de vainilla "ahogada" en espresso
+                                caliente.</p>
+                            <button class="btn btn-menu w-100">Pedir ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section class="gallery-section py-5" id="galeria">
+        <div class="container py-md-5">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold ls-2 color-secondary mb-2">Momentos Aroma</h6>
+                <h2 class="display-5 fw-bold color-text-dark">Nuestro Espacio</h2>
+            </div>
+
+            <!-- Carousel -->
+            <div id="cafeCarousel" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden"
+                data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#cafeCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- Imagen 1 -->
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="assets/img/carrousel1.webp" class="d-block w-100" alt="imagen de café y ambiente">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Ambiente Cálido</h5>
+                            <p>Diseñado para tus momentos de relax o trabajo.</p>
+                        </div>
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/carrousel2.webp" class="d-block w-100" alt="imagen de café y ambiente">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Pasión en cada gota</h5>
+                            <p>El ambiente más relajante para disfrutar de tu café favorito.</p>
+                        </div>
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="assets/img/carrousel3.webp" class="d-block w-100" alt="imagen de café y ambiente">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bold">Materia Prima Única</h5>
+                            <p>Tus mañanas seran especiales, con el mejor café de origen controlado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contact-section py-5" id="contacto">
+        <div class="container py-md-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="contact-wrapper shadow-sm rounded-4 overflow-hidden">
+                        <div class="row g-0">
+
+                            <!-- Info rápida (Izquierda) -->
+                            <div class="col-md-5 contact-info-panel p-4 p-md-5 text-white">
+                                <h3 class="fw-bold mb-4">¡Hablemos!</h3>
+                                <p class="small opacity-75 mb-5">¿Tenés alguna duda o querés reservar para un evento?
+                                    Escribinos.</p>
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-envelope-fill me-3 fs-5"></i>
+                                    <span>hola@cafearoma.com</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                    <span>+5491100000000</span>
+                                </div>
+                            </div>
+
+                            <!-- Formulario Chico (Derecha) -->
+                            <div class="col-md-7 bg-white p-4 p-md-5">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold">Nombre</label>
+                                        <input type="text" class="form-control form-control-sm" placeholder="Tu nombre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label small fw-bold">Email</label>
+                                        <input type="email" class="form-control form-control-sm"
+                                            placeholder="nombre@email.com">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label small fw-bold">Mensaje</label>
+                                        <textarea class="form-control form-control-sm" rows="3"
+                                            placeholder="¿En qué podemos ayudarte?"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-contact w-100">Enviar Mensaje</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer    -->
+
+    <footer class="main-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Columna 1: Marca -->
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h3 class="footer-logo mb-3">CAFÉ <span>AROMA</span></h3>
+                    <p class="small">Pasión por el grano, respeto por el origen. Vení a disfrutar del mejor café de
+                        especialidad de la ciudad.</p>
+                    <div class="contact-info mt-4">
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2 color-primary"></i> Av. Principal 123, Ciudad
+                        </p>
+                        <p><i class="bi bi-whatsapp me-2 color-primary"></i> +54 9 5491100000000</p>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Horarios (Super importante para cafés) -->
+                <div class="col-12 col-md-4 text-center">
+                    <h5 class="fw-bold mb-4 text-uppercase ls-2">Horarios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Lunes a Viernes: <span class="text-white">08:00 - 20:00</span></li>
+                        <li class="mb-2">Sábados: <span class="text-white">09:00 - 21:00</span></li>
+                        <li>Domingos: <span class="text-white">Cerrado</span></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Redes y Newsletter -->
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <h5 class="fw-bold mb-4 text-uppercase ls-2">Seguinos</h5>
+                    <div class="social-links mb-4">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i
+                                class="bi bi-twitter-x"></i></a>
+                    </div>
+                    <p class="small mb-2 text-center text-md-end">Recibí nuestras promos:</p>
+                    <div class="input-group mb-3 justify-content-center justify-content-md-end">
+                        <input type="email"
+                            class="form-control form-control-sm bg-transparent text-white border-secondary"
+                            placeholder="Tu email" style="max-width: 200px;">
+                        <button class="btn btn-newsletter btn-sm" type="button">OK</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="mt-5 border-secondary opacity-25">
+
+            <div class="text-center pt-3 footer-credits">
+                <p class="mb-1">&copy; 2026 Café Aroma. Todos los derechos reservados.</p>
+                <p class="demo-text">
+                    Sitio de demostración creado para el portfolio de
+                    <a href="https://gaboweb.com.ar" target="_blank" rel="noopener noreferrer">Gabo Web</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+<a href="https://wa.me/5491100000000?text=Hola!%20Me%20gustaría%20hacer%20un%20pedido%20en%20Café%20Aroma" 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   title="Escribinos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

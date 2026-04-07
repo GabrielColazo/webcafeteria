@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+.about-section {
+    background-color: $color-bg-light;
+    position: relative; 
+    padding: 100px 0;
+    z-index: 1; // Establece el contexto de apilamiento
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0; // Cubre todo el fondo
+        
+        // --- CONFIGURACIÓN DE IMAGEN ---
+        background-image: url('../img/cafe4.webp'); 
+        background-repeat: repeat;
+        background-size: 300px;
+        background-position: center;
+        
+        // Opacidad un poco más alta (10%) para que se note
+        opacity: 0.4; 
+        filter: blur(2px);
+        
+        // IMPORTANTE: z-index -1 para que quede detrás del texto pero sobre el color de fondo
+        z-index: -1; 
+        pointer-events: none;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2; // Asegura que el contenido esté al frente
+    }
+
+    .about-image-container {
+        img {
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    .about-content {
+        h2 {
+            line-height: 1.2;
+            color: $color-text-dark;
+        }
+        
+        p {
+            line-height: 1.8;
+        }
+
+        // Clases de apoyo si Bootstrap no las toma de variables
+        .color-primary { color: $color-primary !important; }
+        .color-secondary { color: $color-secondary !important; }
+        .color-text-dark { color: $color-text-dark !important; }
+        .ls-2 { letter-spacing: 2px; }
+    }
+}
